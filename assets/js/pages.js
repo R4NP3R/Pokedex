@@ -17,7 +17,7 @@ pages.pokemonListHtml = (pokemon) => {
       <ol class="types">
           ${pokemon.types.map((type) => `<li class="type ${type}"><span>${type}</span></li>`).join('')}
       </ol>
-      <img class="pokedexImageLogo" src="./assests/media/pokebolaLogo.png" alt="Logo Pokebola">
+      <img class="pokedexImageLogo" src="./assets/media/pokebolaLogo.png" alt="Logo Pokebola">
       <img class="pokedexImage" src="${pokemon.photo}" alt="${pokemon.name}">
     </div>
   </li>
@@ -39,7 +39,7 @@ pages.pokemonDetailListHtml = (pokemon) => {
         </ol>
       </div>
       <div class="DetailImages">
-        <img class="DetailImageLogo" src="./assests/media/pokebolaLogo.png" alt="Logo Pokebola">
+        <img class="DetailImageLogo" src="./assets/media/pokebolaLogo.png" alt="Logo Pokebola">
         <img class="DetailImage"src="${pokemon.photo}" alt="${pokemon.name}">
       </div>
     </header>
