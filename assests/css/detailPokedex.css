@@ -1,0 +1,216 @@
+:root {
+  --hp-value: 0%;
+  --attack-value: 0%;
+  --defense-value: 0%;
+  --sAtk-value: 0%;
+  --sDf-value: 0%;
+  --speed-value: 0%;
+}
+
+
+#pokemonDetailList {
+  margin-top: 24px;
+  display: none;
+}
+
+.detailPokemon {
+  margin-bottom: 2rem;
+}
+
+.detailPokemon header{
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem 1rem 0 0;
+  padding: 1.5rem 1rem 0;
+  color: #fff;
+}
+
+.PokemonIdentification {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detailName {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.detailNumber {
+  font-size: 14px;
+}
+
+.abilities {
+  display: flex;
+
+}
+
+.ability {
+  padding: .25rem;
+  border-radius: 1rem;
+  margin: 0 .5rem 0px 0px;
+  font-size: 14px;
+  filter: brightness(1.1);
+}
+
+.DetailImages {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.DetailImage {
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.DetailImageLogo {
+  width: 120px;
+  opacity: .3;
+}
+
+.detailPokemon section{
+  background-color: white;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border-radius: 0 0 1rem 1rem;
+  padding: 1.5rem 1rem 1rem;
+  background-color: #f3f3f3;
+}
+
+
+.detailSection, .statsSection {
+  text-align: justify;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.detailPokemon section h3 {
+  margin-top: 1.5rem;
+}
+
+.statsSection {
+  justify-content: space-between;
+}
+
+.detailSection :nth-child(1), .statsSection :nth-child(1) {
+  margin-right: 2rem;
+}
+
+.resetStatsSection :nth-child(1) {
+  margin-right: 0;
+}
+
+
+.detailPokemon section div p, span{
+  font-size: 14px;
+  margin-bottom: .25rem;
+}
+
+.nivelDiv {
+  width: 40%;
+}
+
+.divButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divButton button {
+  background-color: #6c79db;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: .825rem;
+}
+
+.nivel {
+  display: flex;
+  height: 16px;
+}
+
+.nivelBg {
+  width: 100%;
+  position: relative;
+}
+
+.bg {
+  display: none;
+  background-color: #ebebeb;
+  width: 108px;
+  z-index: 2;
+  position: absolute;
+  z-index: 0;
+}
+
+.hp {
+  background-color: rgb(255, 135, 23);
+  width: var(--hp-value);
+  position: relative;
+  z-index: 1;
+}
+
+.atk {
+  background-color: rgb(49, 250, 49);
+  width: var(--attack-value);
+  position: relative;
+  z-index: 1;
+}
+
+.df {
+  background-color: rgb(219, 2, 2);
+  width: var(--defense-value);
+  position: relative;
+  z-index: 1;
+}
+
+.sAtk {
+  background-color: rgb(49, 250, 49);
+  width: var(--sAtk-value);
+  position: relative;
+  z-index: 1;
+}
+
+.sDf {
+  background-color: rgb(49, 250, 49);
+  width: var(--sDf-value);
+  position: relative;
+  z-index: 1;
+}
+
+.speed {
+  background-color: rgb(0, 238, 255);
+  width: var(--speed-value);
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (min-width: 380px) {
+  #pokemonDetailList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  #pokemonDetailList {
+    grid-template-columns: 1fr 1fr ;
+  }
+
+  .detailPokemon {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #pokemonDetailList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

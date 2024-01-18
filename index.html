@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assests/css/global.css">
+  <link rel="stylesheet" href="./assests/css/pokedex.css">
+  <link rel="stylesheet" href="./assests/css/detailPokedex.css">
+  <title>Pokedex Listagem</title>
+</head>
+<body>
+  <section class="content">
+    <h1>Pokedex</h1>
+    <div class="typeInfoSelect">
+      <span>
+        <img id="pokedexButton" src="./assests/media/pokebola.png" alt="pokemons">
+        <p>Pokemons</p>
+      </span>
+      <span>
+        <img id="detailPokedexButton" src="./assests/media/info.jpg" alt="informação dos pokemons">
+        <p>Details</p>
+      </span>
+    </div>
+    <ol id="pokemonList" class="pokemons">
+      
+    </ol>
+    <!-- <div class="divButton">
+      <button id="button1" class="loadMoreButton" type="button">
+        Load More
+      </button>      -->
+    </div>
+    <ol id="pokemonDetailList" class="pokemons">
+      
+    </ol>
+    <div class="divButton">
+      <button id="button2" class="loadMoreButton" type="button">
+        Load More
+      </button>
+    </div>
+  </section>
+  <script src="./assests/js/PokemonModel.js"></script>
+  <script src="./assests/js/pages.js"></script>
+  <script src="./assests/js/poke-api.js"></script>
+  <script src="./assests/js/main.js"></script>
+</body>
+</html>
